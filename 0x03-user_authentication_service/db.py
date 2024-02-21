@@ -43,7 +43,8 @@ class DB:
             self._session.rollback()
             new_user = None
         return new_user
-def find_user_by(self, **kwargs) -> User:
+
+    def find_user_by(self, **kwargs) -> User:
         """Finds a user based on a set of filters.
         """
         fields, values = [], []
